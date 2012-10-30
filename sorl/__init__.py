@@ -1,7 +1,7 @@
 import logging
 
 
-__version__ = '11.12sm4'
+__version__ = '11.12sm5'
 
 class NullHandler(logging.Handler):
     def emit(self, record):
