@@ -4,7 +4,7 @@ from sorl.thumbnail.engines.base import EngineBase
 try:
     from PIL import Image, ImageFile, ImageDraw, ImageFilter
 except ImportError:
-    import Image, ImageFile, ImageDraw
+    import Image, ImageFile, ImageDraw, ImageFilter
 
 class GaussianBlur(ImageFilter.Filter):
     name = "GaussianBlur"
