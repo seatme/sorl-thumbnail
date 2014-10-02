@@ -5,12 +5,14 @@ from django.core.files.storage import Storage, default_storage
 from django.core.urlresolvers import reverse
 from django.utils.encoding import force_unicode
 from django.utils.functional import LazyObject
-from django.utils import simplejson
 from sorl.thumbnail.conf import settings
 from sorl.thumbnail.helpers import ThumbnailError, tokey, get_module_class
 from sorl.thumbnail import default
 from sorl.thumbnail.parsers import parse_geometry
-
+try:
+    import simplejson
+except ImportError:
+    import json as simplejson
 
 url_pat = re.compile(r'^(https?|ftp):\/\/')
 
