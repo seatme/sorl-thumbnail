@@ -1,7 +1,7 @@
 import hashlib
 from django.core.exceptions import ImproperlyConfigured
 from django.utils.encoding import smart_str
-from django.utils.importlib import import_module
+from importlib import import_module
 try:
     import simplejson
 except ImportError:
